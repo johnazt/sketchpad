@@ -29,8 +29,6 @@ body {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     width: 550px;
     height: 550px;
     cursor: crosshair;

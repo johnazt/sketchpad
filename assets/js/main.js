@@ -21,17 +21,17 @@ function createSquares(inputValue) {
 	for (let i = 0; i < inputValue ** 2; i++) {
 		const square = document.createElement("div");
 		square.classList.add("grid-square");
-		grid.style.gridTemplateColumns = `repeat(${inputValue}, 2fr)`;
-		grid.style.gridTemplateRows = `repeat(${inputValue}, 2fr)`;
+		grid.style.gridTemplateColumns = `repeat(${inputValue}, 1fr)`;
+		grid.style.gridTemplateRows = `repeat(${inputValue}, 1fr)`;
 		grid.appendChild(square);
 	}
 }
 
 // PAINTING SQUARES
-function paintGrid(elem, color) {
-	if (elem.buttons == 1) {
-		if (elem.target.classList == "grid-square") {
-			let square = elem.target;
+function paintGrid(event, color) {
+	if (event.buttons == 1) {
+		if (event.target.classList == "grid-square") {
+			let square = event.target;
 			square.style.backgroundColor = color;
 		}
 	} else {
