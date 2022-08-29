@@ -16,6 +16,8 @@ btnEnter.addEventListener("click", (e) => {
 	createSquares(size);
 });
 
+
+
 // CREATE AND ADD SIZES TO GRID AND SQUARES
 function createSquares(inputValue) {
 	for (let i = 0; i < inputValue ** 2; i++) {
@@ -26,6 +28,7 @@ function createSquares(inputValue) {
 		grid.appendChild(square);
 	}
 }
+
 
 // PAINTING SQUARES
 function paintGrid(event, color) {
